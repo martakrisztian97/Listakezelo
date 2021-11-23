@@ -14,5 +14,8 @@ namespace ListakezeloForm {
       InitializeComponent();
     }
 
+    private void btnKilepes_Click(object sender, EventArgs e) {
+        Application.Exit();
+    }
   }
 }

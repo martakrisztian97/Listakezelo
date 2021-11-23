@@ -140,6 +140,7 @@ namespace ListakezeloForm {
       this.btnKilepes.TabIndex = 9;
       this.btnKilepes.Text = "Kilépés";
       this.btnKilepes.UseVisualStyleBackColor = true;
+      this.btnKilepes.Click += new System.EventHandler(this.btnKilepes_Click);
       // 
       // lblDarab
       // 
