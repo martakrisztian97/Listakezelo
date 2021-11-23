@@ -83,5 +83,9 @@ namespace ListakezeloForm {
       colorDialog.ShowDialog();
       lstLista.ForeColor = colorDialog.Color;
     }
+
+    private void btnSorbarendez_Click(object sender, EventArgs e) {
+      lstLista.Sorted = true;
+    }
   }
 }

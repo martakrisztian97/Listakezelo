@@ -103,6 +103,7 @@ namespace ListakezeloForm {
       this.btnSorbarendez.TabIndex = 5;
       this.btnSorbarendez.Text = "Sorbarendez";
       this.btnSorbarendez.UseVisualStyleBackColor = true;
+      this.btnSorbarendez.Click += new System.EventHandler(this.btnSorbarendez_Click);
       // 
       // btnMinden
       // 
