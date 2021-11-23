@@ -35,6 +35,7 @@ namespace ListakezeloForm {
       this.lstLista = new System.Windows.Forms.ListBox();
       this.btnKilepes = new System.Windows.Forms.Button();
       this.lblDarab = new System.Windows.Forms.Label();
+      this.btnDarabszam = new System.Windows.Forms.Button();
       this.SuspendLayout();
       // 
       // lblNev
@@ -111,6 +112,7 @@ namespace ListakezeloForm {
       this.btnMinden.TabIndex = 6;
       this.btnMinden.Text = "Mindent töröl";
       this.btnMinden.UseVisualStyleBackColor = true;
+      this.btnMinden.Click += new System.EventHandler(this.btnMinden_Click);
       // 
       // btnTorol
       // 
@@ -129,6 +131,7 @@ namespace ListakezeloForm {
       this.lstLista.ItemHeight = 20;
       this.lstLista.Location = new System.Drawing.Point(540, 60);
       this.lstLista.Name = "lstLista";
+      this.lstLista.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
       this.lstLista.Size = new System.Drawing.Size(240, 424);
       this.lstLista.TabIndex = 8;
       // 
@@ -153,11 +156,24 @@ namespace ListakezeloForm {
       this.lblDarab.Text = "A listában az elemek száma: 0";
       this.lblDarab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       // 
+      // btnDarabszam
+      // 
+      this.btnDarabszam.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+      this.btnDarabszam.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+      this.btnDarabszam.Location = new System.Drawing.Point(355, 420);
+      this.btnDarabszam.Name = "btnDarabszam";
+      this.btnDarabszam.Size = new System.Drawing.Size(150, 40);
+      this.btnDarabszam.TabIndex = 11;
+      this.btnDarabszam.Text = "Darabszám";
+      this.btnDarabszam.UseVisualStyleBackColor = true;
+      this.btnDarabszam.Click += new System.EventHandler(this.btnDarabszam_Click);
+      // 
       // formLista
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(800, 550);
+      this.Controls.Add(this.btnDarabszam);
       this.Controls.Add(this.lblDarab);
       this.Controls.Add(this.btnKilepes);
       this.Controls.Add(this.lstLista);
@@ -191,6 +207,7 @@ namespace ListakezeloForm {
     private System.Windows.Forms.ListBox lstLista;
     private System.Windows.Forms.Button btnKilepes;
     private System.Windows.Forms.Label lblDarab;
+    private System.Windows.Forms.Button btnDarabszam;
   }
 }
 

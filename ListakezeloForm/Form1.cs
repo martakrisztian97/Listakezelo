@@ -35,13 +35,22 @@ namespace ListakezeloForm {
       }
     }
 
+    private void txtNev_KeyDown(object sender, KeyEventArgs e) {
+      if (e.KeyCode == Keys.Enter) {
+        btnHozzaad_Click(sender, e);
+      }
+    }
+
     private void btnDarabszam_Click(object sender, EventArgs e) {
       lblDarab.Text = "A listában az elemek száma: " + lstLista.Items.Count.ToString();
     }
 
-    private void txtNev_KeyDown(object sender, KeyEventArgs e) {
-      if (e.KeyCode == Keys.Enter) {
-        btnHozzaad_Click(sender, e);
+    private void btnMinden_Click(object sender, EventArgs e) {
+      DialogResult valasz;
+      valasz = MessageBox.Show("Valóban törölni akar minden elemet?", "Törlés",
+               MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+      if (valasz == DialogResult.Yes) {
+        lstLista.Items.Clear();
       }
     }
   }
