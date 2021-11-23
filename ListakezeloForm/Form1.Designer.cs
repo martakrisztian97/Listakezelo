@@ -79,6 +79,7 @@ namespace ListakezeloForm {
       this.btnBetu.TabIndex = 3;
       this.btnBetu.Text = "Betűt színez";
       this.btnBetu.UseVisualStyleBackColor = true;
+      this.btnBetu.Click += new System.EventHandler(this.btnBetu_Click);
       // 
       // btnHatter
       // 

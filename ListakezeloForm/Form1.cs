@@ -56,7 +56,7 @@ namespace ListakezeloForm {
 
     private void btnTorol_Click(object sender, EventArgs e) {
       int i = 0, gyujto = 0;
-      while (i <= lstLista.Items.Count-1) {
+      while (i <= lstLista.Items.Count - 1) {
         if (lstLista.SelectedIndex == i) {
           lstLista.Items.RemoveAt(lstLista.SelectedIndex);
           gyujto = 1;
@@ -75,6 +75,13 @@ namespace ListakezeloForm {
       colorDialog.Color = lstLista.BackColor;
       colorDialog.ShowDialog();
       lstLista.BackColor = colorDialog.Color;
+    }
+
+    private void btnBetu_Click(object sender, EventArgs e) {
+      ColorDialog colorDialog = new ColorDialog();
+      colorDialog.Color = lstLista.ForeColor;
+      colorDialog.ShowDialog();
+      lstLista.ForeColor = colorDialog.Color;
     }
   }
 }
