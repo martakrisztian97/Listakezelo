@@ -1,3 +1,4 @@
 # Listakezelő
-Példánkban a listakezelésének elemeit fogjuk bemutatni. Megnézzük, hogyan lehet listába felvinni adatokat, törölni onnan (nem csak egyet egyszerre) valamint,
-hogyan lehet a teljes lista tartalmát törölni
+A program a ListBox grafikus elem kezelését mutatja be.
+A program bemutatja, hogyan lehet listába felvinni adatokat, hogyan lehet törölni onnan (nem csak egyet egyszerre) valamint, hogy hogyan lehet a teljes lista tartalmát törölni.
+A program bemutatja még a ListBox háttérszínének, valamint betűszínének változtatását, a ColorDialog osztály segítségével.
