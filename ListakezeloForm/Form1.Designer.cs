@@ -65,6 +65,7 @@ namespace ListakezeloForm {
       this.btnHozzaad.TabIndex = 2;
       this.btnHozzaad.Text = "Hozzáad";
       this.btnHozzaad.UseVisualStyleBackColor = true;
+      this.btnHozzaad.Click += new System.EventHandler(this.btnHozzaad_Click);
       // 
       // btnBetu
       // 
