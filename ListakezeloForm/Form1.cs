@@ -52,6 +52,7 @@ namespace ListakezeloForm {
       if (valasz == DialogResult.Yes) {
         lstLista.Items.Clear();
       }
+      btnDarabszam_Click(sender, e);
     }
 
     private void btnTorol_Click(object sender, EventArgs e) {
