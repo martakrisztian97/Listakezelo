@@ -54,6 +54,7 @@ namespace ListakezeloForm {
       this.txtNev.Size = new System.Drawing.Size(180, 27);
       this.txtNev.TabIndex = 1;
       this.txtNev.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+      this.txtNev.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNev_KeyDown);
       // 
       // btnHozzaad
       // 

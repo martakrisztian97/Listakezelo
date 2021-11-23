@@ -20,7 +20,7 @@ namespace ListakezeloForm {
 
     private void btnHozzaad_Click(object sender, EventArgs e) {
       txtNev.Text = txtNev.Text.Trim();
-      if ( lstLista.Items.Contains((txtNev.Text.ToLower())) ) {
+      if (lstLista.Items.Contains((txtNev.Text.ToLower()))) {
         MessageBox.Show("Ilyen elem már van a listában!", "Hiba!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         txtNev.Focus();
       } else {
@@ -36,7 +36,13 @@ namespace ListakezeloForm {
     }
 
     private void btnDarabszam_Click(object sender, EventArgs e) {
-       lblDarab.Text = "A listában az elemek száma: "+lstLista.Items.Count.ToString();
+      lblDarab.Text = "A listában az elemek száma: " + lstLista.Items.Count.ToString();
+    }
+
+    private void txtNev_KeyDown(object sender, KeyEventArgs e) {
+      if (e.KeyCode == Keys.Enter) {
+        btnHozzaad_Click(sender, e);
+      }
     }
   }
 }
