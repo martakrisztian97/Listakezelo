@@ -69,5 +69,12 @@ namespace ListakezeloForm {
       }
       btnDarabszam_Click(sender, e);
     }
+
+    private void btnHatter_Click(object sender, EventArgs e) {
+      ColorDialog colorDialog = new ColorDialog();
+      colorDialog.Color = lstLista.BackColor;
+      colorDialog.ShowDialog();
+      lstLista.BackColor = colorDialog.Color;
+    }
   }
 }

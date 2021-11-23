@@ -90,6 +90,7 @@ namespace ListakezeloForm {
       this.btnHatter.TabIndex = 4;
       this.btnHatter.Text = "Hátteret színez";
       this.btnHatter.UseVisualStyleBackColor = true;
+      this.btnHatter.Click += new System.EventHandler(this.btnHatter_Click);
       // 
       // btnSorbarendez
       // 
@@ -167,6 +168,7 @@ namespace ListakezeloForm {
       this.btnDarabszam.TabIndex = 11;
       this.btnDarabszam.Text = "Darabszám";
       this.btnDarabszam.UseVisualStyleBackColor = true;
+      this.btnDarabszam.Visible = false;
       this.btnDarabszam.Click += new System.EventHandler(this.btnDarabszam_Click);
       // 
       // formLista
