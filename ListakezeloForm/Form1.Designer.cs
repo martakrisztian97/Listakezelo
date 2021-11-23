@@ -41,6 +41,7 @@ namespace ListakezeloForm {
       // 
       // lblNev
       // 
+      this.lblNev.BackColor = System.Drawing.Color.Transparent;
       this.lblNev.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
       this.lblNev.Location = new System.Drawing.Point(20, 20);
       this.lblNev.Name = "lblNev";
@@ -154,6 +155,8 @@ namespace ListakezeloForm {
       // 
       // lblDarab
       // 
+      this.lblDarab.BackColor = System.Drawing.Color.Transparent;
+      this.lblDarab.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
       this.lblDarab.Location = new System.Drawing.Point(20, 498);
       this.lblDarab.Name = "lblDarab";
       this.lblDarab.Size = new System.Drawing.Size(498, 40);
@@ -178,6 +181,8 @@ namespace ListakezeloForm {
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+      this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+      this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
       this.ClientSize = new System.Drawing.Size(800, 550);
       this.Controls.Add(this.btnDarabszam);
       this.Controls.Add(this.lblDarab);
