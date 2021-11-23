@@ -24,6 +24,7 @@ namespace ListakezeloForm {
     ///  the contents of this method with the code editor.
     /// </summary>
     private void InitializeComponent() {
+      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formLista));
       this.lblNev = new System.Windows.Forms.Label();
       this.txtNev = new System.Windows.Forms.TextBox();
       this.btnHozzaad = new System.Windows.Forms.Button();
@@ -191,6 +192,7 @@ namespace ListakezeloForm {
       this.Controls.Add(this.txtNev);
       this.Controls.Add(this.lblNev);
       this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+      this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
       this.Name = "formLista";
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
       this.Text = "Listakezelő";
