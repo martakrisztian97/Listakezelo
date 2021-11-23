@@ -124,6 +124,7 @@ namespace ListakezeloForm {
       this.btnTorol.TabIndex = 7;
       this.btnTorol.Text = "Töröl";
       this.btnTorol.UseVisualStyleBackColor = true;
+      this.btnTorol.Click += new System.EventHandler(this.btnTorol_Click);
       // 
       // lstLista
       // 

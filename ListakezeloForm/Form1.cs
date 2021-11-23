@@ -53,5 +53,21 @@ namespace ListakezeloForm {
         lstLista.Items.Clear();
       }
     }
+
+    private void btnTorol_Click(object sender, EventArgs e) {
+      int i = 0, gyujto = 0;
+      while (i <= lstLista.Items.Count-1) {
+        if (lstLista.SelectedIndex == i) {
+          lstLista.Items.RemoveAt(lstLista.SelectedIndex);
+          gyujto = 1;
+          i--;
+        }
+        i++;
+      }
+      if (gyujto == 0) {
+        MessageBox.Show("Válassszon legalább egy elemet!", "Hiba!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+      }
+      btnDarabszam_Click(sender, e);
+    }
   }
 }
